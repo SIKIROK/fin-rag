@@ -1,7 +1,7 @@
 [project]
-name = "tender-rag"
+name = "fin-rag"
 version = "0.1.0"
-description = "招投标文件智能问答：复杂文档解析 + 混合检索 + 评测驱动的 RAG 系统"
+description = "A股年报智能问答：复杂财务表格解析 + 混合检索 + 评测驱动的 RAG 系统"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115",
@@ -22,7 +22,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/tender_rag"]
+packages = ["src/fin_rag"]
 
 [tool.ruff]
 line-length = 100
