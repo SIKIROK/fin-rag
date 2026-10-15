@@ -1,0 +1,29 @@
+[project]
+name = "tender-rag"
+version = "0.1.0"
+description = "招投标文件智能问答：复杂文档解析 + 混合检索 + 评测驱动的 RAG 系统"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "httpx>=0.27",
+    "pydantic>=2.8",
+    "openai>=1.40",
+    "python-dotenv>=1.0",
+    "pymupdf>=1.24",
+    "pdfplumber>=0.11",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tender_rag"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

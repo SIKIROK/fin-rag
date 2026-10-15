@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# 环境与密钥
+.env
+.env.*
+
+# 数据：原始文档不入库
+data/raw/
+data/processed/*.json
+!data/golden/.gitkeep
+
+# 模型缓存
+models/
+
+# 编辑器
+.idea/
+.vscode/
